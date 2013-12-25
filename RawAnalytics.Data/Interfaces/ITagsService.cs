@@ -1,7 +1,7 @@
-﻿namespace RawAnalytics.Data
+﻿namespace RawAnalytics.Data.Interfaces
 {
 	public interface ITagsService
 	{
-		void InsertTag(Tag tag);
+		void InsertTag(ITag tag);
 	}
 }

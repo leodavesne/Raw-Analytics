@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.1.5\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi">
+      <HintPath>..\packages\Autofac.WebApi.3.1.0\lib\net40\Autofac.Integration.WebApi.dll</HintPath>
+    </Reference>
     <Reference Include="Elmah">
       <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
     </Reference>
@@ -50,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ITagsService.cs" />
+    <Compile Include="Interfaces\ITag.cs" />
+    <Compile Include="Interfaces\ITagsContext.cs" />
     <Compile Include="TagsService.cs" />
     <Compile Include="TagsContext.cs" />
     <Compile Include="Models\Tag.cs" />

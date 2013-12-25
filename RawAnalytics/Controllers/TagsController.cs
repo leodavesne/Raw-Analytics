@@ -13,7 +13,7 @@
 			_service = service;
 		}
 
-		public void Post(TagViewModel viewModel)
+		public void Insert(TagViewModel viewModel)
 		{
 			Tag tag = new Tag
 			{

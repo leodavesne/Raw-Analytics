@@ -1,8 +1,9 @@
-﻿namespace RawAnalytics.Data
+﻿namespace RawAnalytics.Data.Models
 {
+	using RawAnalytics.Data.Interfaces;
 	using System;
 
-	public class Tag
+	public class Tag : ITag
 	{
 		public int Id { get; set; }
 
