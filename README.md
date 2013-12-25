@@ -1,7 +1,7 @@
 Raw-Analytics
 =============
-https://trello.com/b/ST5YB2Ay/raw-analytics
+Board de suivi : https://trello.com/b/ST5YB2Ay/raw-analytics
 
-TODO:
+TODO :
 - Forcer les données en minuscules
-- 
+- Gérer la dépendance avec jQuery
