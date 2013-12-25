@@ -8,6 +8,16 @@
 	{
 		private TagsContext _context { get; set; }
 
+		public TagsService()
+		{
+			_context = new TagsContext();
+		}
+
+		public TagsService(TagsContext context)
+		{
+			_context = context;
+		}
+
 		public void InsertTag(ITag model)
 		{
 			Tag tag = new Tag

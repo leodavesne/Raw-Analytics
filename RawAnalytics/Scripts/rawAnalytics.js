@@ -1,6 +1,6 @@
 function TagEvent(label, value)
 {
-	var url = "/Insert";
+	var url = "api/Tags/Insert";
 
 	var data = {
 		"Label": label,
@@ -15,6 +15,4 @@ function TagEvent(label, value)
 		data: data,
 		dataType: dataType
 	});
-
-	// TODO: forcer minuscules sur le label et la valeur ?
 }
