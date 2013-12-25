@@ -2,7 +2,7 @@
 {
 	using RawAnalytics.Interfaces;
 
-	public class TagViewModel: ITagViewModel
+	public class TagViewModel : ITagViewModel
 	{
 		public string Label { get; set; }
 

@@ -4,8 +4,8 @@
 
 	public class ITagViewModel
 	{
-		string Label { get; set; }
+		public string Label { get; set; }
 
-		string Value { get; set; }
+		public string Value { get; set; }
 	}
 }
