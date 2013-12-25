@@ -1,7 +1,8 @@
 ﻿namespace RawAnalytics.Controllers
 {
+	using RawAnalytics.Data.Interfaces;
+	using RawAnalytics.Data.Models;
 	using RawAnalytics.ViewModels;
-	using RawAnalytics.Data;
 	using System.Web.Http;
 
 	public class TagsController : ApiController
