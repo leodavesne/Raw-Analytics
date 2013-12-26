@@ -2,7 +2,7 @@
 {
 	using RawAnalytics.Data;
 	using RawAnalytics.Data.Interfaces;
-	using RawAnalytics.Data.Models;
+	using RawAnalytics.Helpers;
 	using RawAnalytics.ViewModels;
 	using System.Net;
 	using System.Net.Http;
@@ -24,13 +24,7 @@
 
 		public HttpResponseMessage Insert(TagViewModel viewModel)
 		{
-			Tag tag = new Tag
-			{
-				Label = viewModel.Label,
-				Value = viewModel.Value
-			};
-
-			_service.InsertTag(tag);
+			_service.InsertTag(TagsHelper.FromViewModelToModel(viewModel));
 
 			HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
 
