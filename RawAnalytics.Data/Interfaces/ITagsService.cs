@@ -2,6 +2,6 @@
 {
 	public interface ITagsService
 	{
-		void InsertTag(ITag tag);
+		bool InsertTag(ITag tag);
 	}
 }

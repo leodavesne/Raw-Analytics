@@ -18,7 +18,7 @@
 			_context = context;
 		}
 
-		public void InsertTag(ITag model)
+		public bool InsertTag(ITag model)
 		{
 			Tag tag = new Tag
 			{
@@ -29,6 +29,8 @@
 
 			_context.Tags.Add(tag);
 			_context.SaveChanges();
+
+			return true;
 		}
 	}
 }

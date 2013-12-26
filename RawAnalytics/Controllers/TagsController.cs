@@ -24,11 +24,18 @@
 
 		public HttpResponseMessage Insert(TagViewModel viewModel)
 		{
-			_service.InsertTag(TagsHelper.FromViewModelToModel(viewModel));
+			HttpResponseMessage httpResponseMessage = Request.CreateResponse(HttpStatusCode.OK);
 
-			HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
+			if (viewModel != null)
+			{
+				_service.InsertTag(TagsHelper.FromViewModelToModel(viewModel));
+			}
+			else
+			{
+				httpResponseMessage = Request.CreateResponse(HttpStatusCode.BadRequest);
+			}
 
-			return response;
+			return httpResponseMessage;
 		}
 	}
 }
