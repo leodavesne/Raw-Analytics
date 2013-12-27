@@ -7,3 +7,5 @@ TODO :
 - Gérer la dépendance avec jQuery
 - Ecrire la description
 - Tests unitaires
+- Faire en sorte que le tag soit hyper facile à poser
+- Optimiser les champs en base de données
